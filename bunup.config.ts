@@ -16,6 +16,7 @@ export default defineConfig({
 	// splitting: true, //nodeProtocol
 	// exports: true,
 	// noExternal: []
+	silent: true,
 	unused: {
 		level: "error",
 	},
