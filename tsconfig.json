@@ -1,0 +1,70 @@
+{
+	"compilerOptions": {
+		// Environment setup & latest features
+		"lib": [
+			"ESNext"
+		],
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleDetection": "force",
+		"jsx": "preserve",
+		"allowJs": true,
+		// Bundler mode
+		"moduleResolution": "bundler",
+		"allowImportingTsExtensions": true,
+		"verbatimModuleSyntax": true,
+		"noEmit": true,
+		// Best practices
+		// true by default
+		// "strict": true,
+		"skipLibCheck": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		// Some stricter flags (disabled by default)
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noPropertyAccessFromIndexSignature": true,
+		// Custom
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"composite": true,
+		// deprecated
+		// "downlevelIteration": false,
+		"importHelpers": true,
+		"incremental": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		// true by default
+		// "noUncheckedSideEffectImports": true,
+		"removeComments": true,
+		"resolveJsonModule": true,
+		// reason: use skipLibCheck
+		// "skipDefaultLibCheck": true,
+		"strictBindCallApply": true,
+		"types": [
+			"bun"
+			// "node",
+		],
+		// Path
+		// deprecated
+		// "baseUrl": ".",
+		"paths": {
+			"~/*": [
+				"./src/*"
+			]
+		},
+		"rootDir": "./src"
+	},
+	"include": [
+		"./src/**/*.ts",
+		"./example/**/*.ts",
+		"./qa/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
