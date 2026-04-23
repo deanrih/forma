@@ -37,8 +37,7 @@ type ElysiaStatus = number | keyof StatusMap;
 // 	onSuccess?: (request: Request, success: Success) => void | Promise<void>;
 // }
 
-// biome-ignore lint/nursery/useExplicitReturnType: _
-function forma(/* options: FormaOptions = {} */) {
+function forma(/* options: FormaOptions = {} */): unknown {
 	const lifeCycleAs: LifeCycleType = "scoped";
 	return new Elysia({
 		name: "@deanrih/forma",
